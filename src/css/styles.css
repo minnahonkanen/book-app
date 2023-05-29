@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  background-color: #fbbf37;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc,
+    1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc,
+    3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc,
+    5px 6px 1px #eee, 7px 6px 1px #ccc;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+label {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+input {
+  height: 3rem;
+}
+
+button {
+  font-size: 1.6rem;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: 2px solid #505050;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #505050;
+  color: #fff;
+}
+
+button:active {
+  cursor: pointer;
+  background-color: #505050;
+  color: #fbbf37;
+  outline: 1px solid #fbbf37;
+}
+
+.panel {
+  display: grid;
+  width: 100%;
+  max-width: 150rem;
+  justify-items: center;
+  border-radius: 2rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.card-row {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 25em));
+  width: 100%;
+  justify-content: center;
+  gap: 4rem;
+  border-top: 0.1px solid #e4e4e4;
+  border-bottom: 0.1px solid #e4e4e4;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.card {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-columns: 1fr;
+  max-width: 350px;
+  border-radius: 0 2rem 2rem 2rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.card .triangle {
+  width: 0;
+  height: 0;
+  border-top: 5rem solid #505050;
+  border-right: 6rem solid transparent;
+  filter: drop-shadow(1px 1px 1px rgba(251, 191, 55, 1))
+    drop-shadow(1px 1px 4px rgba(0, 0, 0, 1));
+}
+
+.card .content {
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.card img {
+  margin: 0 auto;
+}
+
+.card .action-row {
+  margin: 2rem;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+}
+
+.book-create {
+  margin: 2rem;
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: stretch;
+}
+
+.book-create h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.book-create .label {
+  display: grid;
+  width: 100%;
+  grid-auto-flow: column;
+  justify-content: center;
+}
+
+.book-create button {
+  display: grid;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.edit-form {
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: auto;
+  width: 80%;
+}
+
+.edit-form .label input {
+  width: 20rem;
+}
