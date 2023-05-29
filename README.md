@@ -1,3 +1,7 @@
+# Runnin the App
+
+You can start the app by using `npm start` and `npm run server` commands in two separate terminal tabs. Please make sure you are in the project root when running the commands.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
